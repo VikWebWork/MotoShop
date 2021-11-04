@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MotoShop</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="header__top">
+				<nav class="menu">
+					<button class="menu__btn">
+						<div class="menu__btn-line"></div>
+						<div class="menu__btn-line"></div>
+						<div class="menu__btn-line"></div>
+					</button>
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a class="menu__link" href="#">Магазины</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Акции</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link" href="#">Доставка и оплата</a>
+						</li>
+					</ul>
+				</nav>
+				<a class="logo" href="#">
+					<img class="logo__img" src="images/logo.svg" alt="logo">
+				</a>
+				<div class="header__box">
+					<p class="header__address">
+						Краснодар, Академика Турбилина
+					</p>
+					<ul class="user-list">
+						<li class="user-list__item">
+							<a class="user-list__link" href="#">
+								<img src="images/heart.svg" alt="">
+							</a>
+						</li>
+						<li class="user-list__item">
+							<a class="user-list__link" href="#">
+								<img src="images/user.svg" alt="">
+							</a>
+						</li>
+						<li class="user-list__item">
+							<a class="user-list__link basket" href="#">
+								<img src="images/basket.svg" alt="">
+								<div class="basket__num">1</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<ul class="menu-mobile__list">
+			<li class="menu-mobile__item">
+				<a class="menu-mobile__link" href="#">
+					<img class="menu-mobile__img" src="images/user.svg" alt="">
+					<span>Войти</span>
+				</a>
+			</li>
+			<li class="menu-mobile__item">
+				<a class="menu-mobile__link" href="#">
+					<img class="menu-mobile__img" src="images/user.svg" alt="">
+					<span>Регистрация</span>
+				</a>
+			</li>
+			<li class="menu-mobile__item">
+				<a class="menu-mobile__link" href="#">
+					<img class="menu-mobile__img" src="images/heart.svg" alt="">
+					<span>Избранное</span>
+				</a>
+			</li>
+			<li class="menu-mobile__item">
+				<a class="menu-mobile__link" href="#">
+					<img class="menu-mobile__img" src="images/basket.svg" alt="">
+					<span>Корзина</span>
+				</a>
+			</li>
+			<li class="menu-mobile__item">
+				<a class="menu-mobile__link" href="#">
+					<img class="menu-mobile__img" src="images/shops.svg" alt="">
+					<span>Магазины</span>
+				</a>
+			</li>
+			<li class="menu-mobile__item">
+				<a class="menu-mobile__link" href="#">
+					<img class="menu-mobile__img" src="images/stocks.svg" alt="">
+					<span>Акции</span>
+				</a>
+			</li>
+			<li class="menu-mobile__item">
+				<a class="menu-mobile__link" href="#">
+					<img class="menu-mobile__img" src="images/delivery.svg" alt="">
+					<span>Доставка и оплата</span>
+				</a>
+			</li>
+			<li class="menu-mobile__item">
+				<a class="menu-mobile__link" href="#">
+					<span>Квадроциклы</span>
+				</a>
+			</li>
+			<li class="menu-mobile__item">
+				<a class="menu-mobile__link" href="#">
+					<span>Катера</span>
+				</a>
+			</li>
+			<li class="menu-mobile__item">
+				<a class="menu-mobile__link" href="#">
+					<span>Гидроциклы</span>
+				</a>
+			</li>
+			<li class="menu-mobile__item">
+				<a class="menu-mobile__link" href="#">
+					<span>Лодки</span>
+				</a>
+			</li>
+			<li class="menu-mobile__item">
+				<a class="menu-mobile__link" href="#">
+					<span>Вездеходы</span>
+				</a>
+			</li>
+			<li class="menu-mobile__item">
+				<a class="menu-mobile__link" href="#">
+					<span>Снегоходы</span>
+				</a>
+			</li>
+			<li class="menu-mobile__item">
+				<a class="menu-mobile__link" href="#">
+					<span>Двигатели</span>
+				</a>
+			</li>
+			<li class="menu-mobile__item">
+				<a class="menu-mobile__link" href="#">
+					<span>Запчасти</span>
+				</a>
+			</li>
+		</ul>
+
+		<div class="header__bottom">
+			<div class="container">
+				<ul class="menu__categories">
+					<li class="menu__categories-item">
+						<a class="menu__categories-link" data-title="Аксессуары" href="#">Аксессуары</a>
+					</li>
+					<li class="menu__categories-item">
+						<a class="menu__categories-link" data-title="Шины и диски" href="#">Шины и диски</a>
+					</li>
+					<li class="menu__categories-item">
+						<a class="menu__categories-link" data-title="Сцепление" href="#">Сцепление</a>
+					</li>
+					<li class="menu__categories-item">
+						<a class="menu__categories-link" data-title="Электрика" href="#">Электрика</a>
+					</li>
+					<li class="menu__categories-item">
+						<a class="menu__categories-link" data-title="Выхлопная система" href="#">Выхлопная система</a>
+					</li>
+					<li class="menu__categories-item">
+						<a class="menu__categories-link" data-title="Двигатели" href="#">Двигатели</a>
+					</li>
+					<li class="menu__categories-item">
+						<a class="menu__categories-link" data-title="Другое" href="#">Другое</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<div class="breadcrumbs">
+		<div class="container">
+			<ul class="breadcrumbs__list">
+				<li class="breadcrumbs__list-item">
+					<a href="#">Главная</a>
+				</li>
+				<li class="breadcrumbs__list-item">
+					<a href="#">Шины и диски</a>
+				</li>
+				<li class="breadcrumbs__list-item">
+					<a href="#">Диски Moto Metal MO961 9x18 5x127 ET18 dia 78,1 black /K</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<section class="product-card">
+		<div class="container">
+			<div class="product-card__inner">
+				<div class="product-card__img-box products-item--sale">
+					<img src="images/content/wheel-big.png" alt="">
+					<p class="product-card__price-old price">
+						<del>26 000</del>
+					</p>
+					<p class="product-card__price-new price">
+						25 100
+					</p>
+					<a href="#" class="product-card__link">Нашли дешевле? Снизим цену!</a>
+					<div class="product-card__btn product-card__btn--mobile">
+						<button>купить</button>
+					</div>
+				</div>
+				<div class="product-card__content">
+					<h1 class="product-card__title">Диски Moto Metal MO961 9x18 5x127 ET18 dia 78,1 black /K</h1>
+					<p class="product-card__code">Код товара: 666666-6</p>
+					<div class="product-card__icons">
+						<a class="product-card__icon-favorite" href="#">
+							<img src="images/heart.svg" alt="">
+						</a>
+						<a class="product-card__icon-comparison" href="#">
+							<img src="images/comparison.svg" alt="">
+						</a>
+						<a class="product-card__rate-yo" data-rateyo-rating="4"></a>
+					</div>
+					<div class="product-card__tabs tabs-wrapper">
+						<div class="tabs">
+							<a href="#product-card__spec" class="product-card__tab tab tab--active">
+								Характеристики
+							</a>
+							<a href="#product-card__availability" class="product-card__tab tab">
+								Наличие в магазинах
+							</a>
+						</div>
+
+						<div class="tabs-container">
+							<div id="product-card__spec" class="product-card__tab-content tabs-content tabs-content--active">
+								<ul class="product-card__list">
+									<li class="product-card__item">
+										<div class="product-card__item-left">Ширина x Диаметр</div>
+										<div class="product-card__item-right">9x18</div>
+									</li>
+									<li class="product-card__item">
+										<div class="product-card__item-left">Сверловка (PCD)</div>
+										<div class="product-card__item-right">5x127</div>
+									</li>
+									<li class="product-card__item">
+										<div class="product-card__item-left">Вылет (ET)</div>
+										<div class="product-card__item-right">18</div>
+									</li>
+									<li class="product-card__item">
+										<div class="product-card__item-left">Ступица (DIA)</div>
+										<div class="product-card__item-right">78.1</div>
+									</li>
+									<li class="product-card__item">
+										<div class="product-card__item-left">Тип диска</div>
+										<div class="product-card__item-right">литые</div>
+									</li>
+								</ul>
+								<a class="product-card__more" href="#">Показать ещё</a>
+								<div class="product-card__btn">
+									<button>купить</button>
+								</div>
+							</div>
+
+							<div id="product-card__availability" class="product-card__tab-content tabs-content">
+								content-2
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="card-tabs">
+		<div class="container">
+			<div class="tabs-wrapper">
+				<div class="tabs card-tabs__box mobile-overflow">
+					<a class="card-tab tab" href="#product-card__about">О товаре</a>
+					<a class="card-tab tab" href="#product-card__specifications">Характеристики</a>
+					<a class="card-tab tab" href="#product-card__review">Отзывы</a>
+					<a class="card-tab tab tab--active" href="#product-card__pickup">Самовывоз</a>
+					<a class="card-tab tab" href="#product-card__delivery">Доставка</a>
+					<a class="card-tab tab" href="#product-card__service">Cервис</a>
+					<a class="card-tab tab" href="#product-card__warranty">Гарантия</a>
+				</div>
+			</div>
+			<div class="tabs-container">
+				<div id="product-card__about" class="card-tab__content tabs-content">content</div>
+				<div id="product-card__specifications" class="card-tab__content tabs-content">content</div>
+				<div id="product-card__review" class="card-tab__content tabs-content">content</div>
+				<div id="product-card__pickup" class="card-tab__content tabs-content tabs-content--active">
+					<form class="product-card__form">
+						<div class="card__top-line">
+							<label class="card__label-search">
+								Магазин
+								<input class="card__input-search" type="text">
+							</label>
+
+							<label for="" class="card__label-pickup">
+								<input class="filter-style" type="radio" name="pickup" checked>
+								Забрать сегодня
+							</label>
+
+							<label for="" class="card__label-pickup">
+								<input class="filter-style" type="radio" name="pickup">
+								Забрать в течение недели
+							</label>
+						</div>
+
+						<ul class="card__list">
+							<li class="card__list-item card__list-item-title">
+								<div class="card__list-address">Адрес</div>
+								<div class="card__list-workhours">Режим работы</div>
+								<div class="card__list-avialable">Доступность</div>
+								<div class="card__list-num">Количество</div>
+								<div class="card__list-btn"></div>
+							</li>
+
+							<li class="card__list-item">
+								<div class="card__list-address">Москва, ул.&nbsp;Академика&nbsp;Турбилина</div>
+								<div class="card__list-workhours">
+									<div class="card__list-workhours-box"><span>пн-сб:</span>08:00-19:00</div>
+									<div class="card__list-workhours-box"><span>вс:</span>09:00-17:00</div>
+								</div>
+								<div class="card__list-avialable">В наличии</div>
+								<div class="card__list-num">1</div>
+								<div class="card__list-btn">
+									<button class="card__btn-address-1" type="submit">купить</button>
+								</div>
+							</li>
+
+							<li class="card__list-item">
+								<div class="card__list-address">Краснодар, ул.&nbsp;Академика&nbsp;Турбилина </div>
+								<div class="card__list-workhours">
+									<div class="card__list-workhours-box"><span>пн-сб:</span>08:00-19:00</div>
+									<div class="card__list-workhours-box"><span>вс:</span>09:00-17:00</div>
+								</div>
+								<div class="card__list-avialable">В наличии</div>
+								<div class="card__list-num">2</div>
+								<div class="card__list-btn">
+									<button class="card__btn-address-2" type="submit">купить</button>
+								</div>
+							</li>
+
+							<li class="card__list-item">
+								<div class="card__list-address">Санкт-Петербург,
+									ул.&nbsp;Академика&nbsp;Турбилина</div>
+								<div class="card__list-workhours">
+									<div class="card__list-workhours-box"><span>пн-сб:</span>08:00-19:00</div>
+									<div class="card__list-workhours-box"><span>вс:</span>09:00-17:00</div>
+								</div>
+								<div class="card__list-avialable">Нет в наличии</div>
+								<div class="card__list-num">0</div>
+								<div class="card__list-btn">
+									<button class="card__btn-address-3" type="submit">купить</button>
+								</div>
+							</li>
+
+							<li class="card__list-item">
+								<div class="card__list-address">Москва, ул.&nbsp;Академика&nbsp;Турбилина</div>
+								<div class="card__list-workhours">
+									<div class="card__list-workhours-box"><span>пн-сб:</span>08:00-19:00</div>
+									<div class="card__list-workhours-box"><span>вс:</span>09:00-17:00</div>
+								</div>
+								<div class="card__list-avialable">Нет в наличии</div>
+								<div class="card__list-num">0</div>
+								<div class="card__list-btn">
+									<button class="card__btn-address-4" type="submit">купить</button>
+								</div>
+							</li>
+						</ul>
+					</form>
+				</div>
+				<div id="product-card__delivery" class="card-tab__content tabs-content">content</div>
+				<div id="product-card__service" class="card-tab__content tabs-content">content</div>
+				<div id="product-card__warranty" class="card-tab__content tabs-content">content</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="products">
+		<div class="container">
+			<div class="products__inner">
+				<h3 class="products__title">
+					Популярные товары
+				</h3>
+				<div class="tabs-wrapper">
+					<div class="products__tabs tabs mobile-overflow">
+						<a href="#popular-tab-1" class="products__tab tab tab--active" data-title="Аксессуары">Аксессуары</a>
+						<a href="#popular-tab-2" class="products__tab tab" data-title="Шины и диски">Шины и диски</a>
+						<a href="#popular-tab-3" class="products__tab tab" data-title="Сцепление">Сцепление</a>
+						<a href="#popular-tab-4" class="products__tab tab" data-title="Электрика">Электрика</a>
+						<a href="#popular-tab-5" class="products__tab tab" data-title="Инструменты">Инструменты</a>
+						<a href="#popular-tab-6" class="products__tab tab" data-title="Выхлопная система">Выхлопная система</a>
+					</div>
+				</div>
+				<div class="products__container tabs-container">
+
+					<div id="popular-tab-1" class="products__content tabs-content tabs-content--active">
+						<div class="products-slider">
+
+							<div class="products-slider__item">
+								<div class="products-item__wrapper">
+									<button class="products-item__favorite"></button>
+									<button class="products-item__basket">
+										<img src="images/basket-white.svg" alt="">
+									</button>
+
+									<a class="products-item" href="#">
+										<p class="products-item__hover-text">
+											посмотреть товар
+										</p>
+										<img class="products-item__img" src="images/content/helmet.png" alt="">
+										<h4 class="products-item__title">
+											Шлем Icon Alliance Majesty
+										</h4>
+										<p class="products-item__price price">
+											15 600
+										</p>
+										<p class="products-item__notify-text">
+											нет в наличии
+										</p>
+									</a>
+
+									<a class="products-item__notify-link" href="#">
+										<span>Сообщить о поступлении</span>
+									</a>
+								</div>
+
+							</div>
+
+							<div class="products-slider__item">
+								<div class="products-item__wrapper">
+									<button class="products-item__favorite"></button>
+									<button class="products-item__basket">
+										<img src="images/basket-white.svg" alt="">
+									</button>
+									<a class="products-item products-item--sale" href="#">
+										<p class="products-item__hover-text">
+											посмотреть товар
+										</p>
+										<img class="products-item__img" src="images/content/protection.png" alt="">
+										<h4 class="products-item__title">
+											Защита колен Icon Cloverleaf
+										</h4>
+										<p class="products-item__price price">
+											10 300
+										</p>
+										<p class="products-item__notify-text">
+											нет в наличии
+										</p>
+									</a>
+									<a class="products-item__notify-link" href="#">
+										<span>Сообщить о поступлении</span>
+									</a>
+								</div>
+							</div>
+
+							<div class="products-slider__item">
+								<div class="products-item__wrapper">
+									<button class="products-item__favorite"></button>
+									<button class="products-item__basket">
+										<img src="images/basket-white.svg" alt="">
+									</button>
+									<a class="products-item" href="#">
+										<p class="products-item__hover-text">
+											посмотреть товар
+										</p>
+										<img class="products-item__img" src="images/content/jacket.png" alt="">
+										<h4 class="products-item__title">
+											Icon Overlord SB2 CE мотокуртка красная
+										</h4>
+										<p class="products-item__price price">
+											16 200
+										</p>
+										<p class="products-item__notify-text">
+											нет в наличии
+										</p>
+									</a>
+									<a class="products-item__notify-link" href="#">
+										<span>Сообщить о поступлении</span>
+									</a>
+								</div>
+
+							</div>
+
+							<div class="products-slider__item">
+								<div class="products-item__wrapper products-item__not-avaliable">
+									<button class="products-item__favorite"></button>
+									<button class="products-item__basket">
+										<img src="images/basket-white.svg" alt="">
+									</button>
+									<a class="products-item" href="#">
+										<p class="products-item__hover-text">
+											посмотреть товар
+										</p>
+										<img class="products-item__img" src="images/content/backpack.png" alt="">
+										<h4 class="products-item__title">
+											Thor Hydrant рюкзак-водопойка 2л 
+										</h4>
+										<p class="products-item__price price">
+											7 800
+										</p>
+										<p class="products-item__notify-text">
+											нет в наличии
+										</p>
+									</a>
+									<a class="products-item__notify-link" href="#">
+										<span>Сообщить о поступлении</span>
+									</a>
+								</div>
+
+							</div>
+
+
+							<div class="products-slider__item">
+								<div class="products-item__wrapper">
+									<button class="products-item__favorite"></button>
+									<button class="products-item__basket">
+										<img src="images/basket-white.svg" alt="">
+									</button>
+
+									<a class="products-item" href="#">
+										<p class="products-item__hover-text">
+											посмотреть товар
+										</p>
+										<img class="products-item__img" src="images/content/helmet.png" alt="">
+										<h4 class="products-item__title">
+											Шлем Icon Alliance Majesty
+										</h4>
+										<p class="products-item__price price">
+											15 600
+										</p>
+										<p class="products-item__notify-text">
+											нет в наличии
+										</p>
+									</a>
+
+									<a class="products-item__notify-link" href="#">
+										<span>Сообщить о поступлении</span>
+									</a>
+								</div>
+
+							</div>
+
+							<div class="products-slider__item">
+								<div class="products-item__wrapper">
+									<button class="products-item__favorite"></button>
+									<button class="products-item__basket">
+										<img src="images/basket-white.svg" alt="">
+									</button>
+									<a class="products-item products-item--sale" href="#">
+										<p class="products-item__hover-text">
+											посмотреть товар
+										</p>
+										<img class="products-item__img" src="images/content/protection.png" alt="">
+										<h4 class="products-item__title">
+											Защита колен Icon Cloverleaf
+										</h4>
+										<p class="products-item__price price">
+											10 300
+										</p>
+										<p class="products-item__notify-text">
+											нет в наличии
+										</p>
+									</a>
+									<a class="products-item__notify-link" href="#">
+										<span>Сообщить о поступлении</span>
+									</a>
+								</div>
+							</div>
+
+							<div class="products-slider__item">
+								<div class="products-item__wrapper">
+									<button class="products-item__favorite"></button>
+									<button class="products-item__basket">
+										<img src="images/basket-white.svg" alt="">
+									</button>
+									<a class="products-item" href="#">
+										<p class="products-item__hover-text">
+											посмотреть товар
+										</p>
+										<img class="products-item__img" src="images/content/jacket.png" alt="">
+										<h4 class="products-item__title">
+											Icon Overlord SB2 CE мотокуртка красная
+										</h4>
+										<p class="products-item__price price">
+											16 200
+										</p>
+										<p class="products-item__notify-text">
+											нет в наличии
+										</p>
+									</a>
+									<a class="products-item__notify-link" href="#">
+										<span>Сообщить о поступлении</span>
+									</a>
+								</div>
+
+							</div>
+
+							<div class="products-slider__item">
+								<div class="products-item__wrapper products-item__not-avaliable">
+									<button class="products-item__favorite"></button>
+									<button class="products-item__basket">
+										<img src="images/basket-white.svg" alt="">
+									</button>
+									<a class="products-item" href="#">
+										<p class="products-item__hover-text">
+											посмотреть товар
+										</p>
+										<img class="products-item__img" src="images/content/backpack.png" alt="">
+										<h4 class="products-item__title">
+											Thor Hydrant рюкзак-водопойка 2л 
+										</h4>
+										<p class="products-item__price price">
+											7 800
+										</p>
+										<p class="products-item__notify-text">
+											нет в наличии
+										</p>
+									</a>
+									<a class="products-item__notify-link" href="#">
+										<span>Сообщить о поступлении</span>
+									</a>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+					<div id="popular-tab-2" class="products__content tabs-content">
+						<div class="products-slider">
+
+							<div class="products-slider__item">
+								<div class="products-item__wrapper">
+									<button class="products-item__favorite"></button>
+									<button class="products-item__basket">
+										<img src="images/basket-white.svg" alt="">
+									</button>
+
+									<a class="products-item" href="#">
+										<p class="products-item__hover-text">
+											посмотреть товар
+										</p>
+										<img class="products-item__img" src="images/content/helmet.png" alt="">
+										<h4 class="products-item__title">
+											Шлем Icon Alliance Majesty
+										</h4>
+										<p class="products-item__price price">
+											15 600
+										</p>
+										<p class="products-item__notify-text">
+											нет в наличии
+										</p>
+									</a>
+
+									<a class="products-item__notify-link" href="#">
+										<span>Сообщить о поступлении</span>
+									</a>
+								</div>
+
+							</div>
+
+							<div class="products-slider__item">
+								<div class="products-item__wrapper">
+									<button class="products-item__favorite"></button>
+									<button class="products-item__basket">
+										<img src="images/basket-white.svg" alt="">
+									</button>
+									<a class="products-item products-item--sale" href="#">
+										<p class="products-item__hover-text">
+											посмотреть товар
+										</p>
+										<img class="products-item__img" src="images/content/protection.png" alt="">
+										<h4 class="products-item__title">
+											Защита колен Icon Cloverleaf
+										</h4>
+										<p class="products-item__price price">
+											10 300
+										</p>
+										<p class="products-item__notify-text">
+											нет в наличии
+										</p>
+									</a>
+									<a class="products-item__notify-link" href="#">
+										<span>Сообщить о поступлении</span>
+									</a>
+								</div>
+							</div>
+
+							<div class="products-slider__item">
+								<div class="products-item__wrapper">
+									<button class="products-item__favorite"></button>
+									<button class="products-item__basket">
+										<img src="images/basket-white.svg" alt="">
+									</button>
+									<a class="products-item" href="#">
+										<p class="products-item__hover-text">
+											посмотреть товар
+										</p>
+										<img class="products-item__img" src="images/content/jacket.png" alt="">
+										<h4 class="products-item__title">
+											Icon Overlord SB2 CE мотокуртка красная
+										</h4>
+										<p class="products-item__price price">
+											16 200
+										</p>
+										<p class="products-item__notify-text">
+											нет в наличии
+										</p>
+									</a>
+									<a class="products-item__notify-link" href="#">
+										<span>Сообщить о поступлении</span>
+									</a>
+								</div>
+
+							</div>
+
+							<div class="products-slider__item">
+								<div class="products-item__wrapper products-item__not-avaliable">
+									<button class="products-item__favorite"></button>
+									<button class="products-item__basket">
+										<img src="images/basket-white.svg" alt="">
+									</button>
+									<a class="products-item" href="#">
+										<p class="products-item__hover-text">
+											посмотреть товар
+										</p>
+										<img class="products-item__img" src="images/content/backpack.png" alt="">
+										<h4 class="products-item__title">
+											Thor Hydrant рюкзак-водопойка 2л 
+										</h4>
+										<p class="products-item__price price">
+											7 800
+										</p>
+										<p class="products-item__notify-text">
+											нет в наличии
+										</p>
+									</a>
+									<a class="products-item__notify-link" href="#">
+										<span>Сообщить о поступлении</span>
+									</a>
+								</div>
+
+							</div>
+
+
+							<div class="products-slider__item">
+								<div class="products-item__wrapper">
+									<button class="products-item__favorite"></button>
+									<button class="products-item__basket">
+										<img src="images/basket-white.svg" alt="">
+									</button>
+
+									<a class="products-item" href="#">
+										<p class="products-item__hover-text">
+											посмотреть товар
+										</p>
+										<img class="products-item__img" src="images/content/helmet.png" alt="">
+										<h4 class="products-item__title">
+											Шлем Icon Alliance Majesty
+										</h4>
+										<p class="products-item__price price">
+											15 600
+										</p>
+										<p class="products-item__notify-text">
+											нет в наличии
+										</p>
+									</a>
+
+									<a class="products-item__notify-link" href="#">
+										<span>Сообщить о поступлении</span>
+									</a>
+								</div>
+
+							</div>
+
+							<div class="products-slider__item">
+								<div class="products-item__wrapper">
+									<button class="products-item__favorite"></button>
+									<button class="products-item__basket">
+										<img src="images/basket-white.svg" alt="">
+									</button>
+									<a class="products-item products-item--sale" href="#">
+										<p class="products-item__hover-text">
+											посмотреть товар
+										</p>
+										<img class="products-item__img" src="images/content/protection.png" alt="">
+										<h4 class="products-item__title">
+											Защита колен Icon Cloverleaf
+										</h4>
+										<p class="products-item__price price">
+											10 300
+										</p>
+										<p class="products-item__notify-text">
+											нет в наличии
+										</p>
+									</a>
+									<a class="products-item__notify-link" href="#">
+										<span>Сообщить о поступлении</span>
+									</a>
+								</div>
+							</div>
+
+							<div class="products-slider__item">
+								<div class="products-item__wrapper">
+									<button class="products-item__favorite"></button>
+									<button class="products-item__basket">
+										<img src="images/basket-white.svg" alt="">
+									</button>
+									<a class="products-item" href="#">
+										<p class="products-item__hover-text">
+											посмотреть товар
+										</p>
+										<img class="products-item__img" src="images/content/jacket.png" alt="">
+										<h4 class="products-item__title">
+											Icon Overlord SB2 CE мотокуртка красная
+										</h4>
+										<p class="products-item__price price">
+											16 200
+										</p>
+										<p class="products-item__notify-text">
+											нет в наличии
+										</p>
+									</a>
+									<a class="products-item__notify-link" href="#">
+										<span>Сообщить о поступлении</span>
+									</a>
+								</div>
+
+							</div>
+
+							<div class="products-slider__item">
+								<div class="products-item__wrapper products-item__not-avaliable">
+									<button class="products-item__favorite"></button>
+									<button class="products-item__basket">
+										<img src="images/basket-white.svg" alt="">
+									</button>
+									<a class="products-item" href="#">
+										<p class="products-item__hover-text">
+											посмотреть товар
+										</p>
+										<img class="products-item__img" src="images/content/backpack.png" alt="">
+										<h4 class="products-item__title">
+											Thor Hydrant рюкзак-водопойка 2л 
+										</h4>
+										<p class="products-item__price price">
+											7 800
+										</p>
+										<p class="products-item__notify-text">
+											нет в наличии
+										</p>
+									</a>
+									<a class="products-item__notify-link" href="#">
+										<span>Сообщить о поступлении</span>
+									</a>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+					<div id="popular-tab-3" class="products__content tabs-content">slider 3</div>
+					<div id="popular-tab-4" class="products__content tabs-content">slider 4</div>
+					<div id="popular-tab-5" class="products__content tabs-content">slider 5</div>
+					<div id="popular-tab-6" class="products__content tabs-content">slider 6</div>
+				</div>
+
+				<div class="products__more">
+					<a class="products__more-link" href="#">Показать ещё</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			
+				<div class="footer__inner">
+
+					<div class="footer__items footer__newsletter">
+						<h6 class="footer__title">
+							Подпишитесь на нашу рассылку и узнавайте о акциях быстрее
+						</h6>
+						<form class="footer-form">
+							<input class="footer-form__input" type="text" placeholder="Введите ваш e-mail:">
+							<button class="footer-form__btn" type="submit">Отправить</button>
+						</form>
+					</div>
+
+					<div class="footer__items">
+						<h6 class="footer__title">
+							Информация
+						</h6>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="#">О компании</a>
+							</li>
+							<li class="footer__item">
+								<a href="#">Контакты</a>
+							</li>
+							<li class="footer__item">
+								<a href="#">Акции</a>
+							</li>
+							<li class="footer__item">
+								<a href="#">Магазины</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="footer__items">
+						<h6 class="footer__title">
+							Интернет-магазин
+						</h6>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="#">Доставка и самовывоз</a>
+							</li>
+							<li class="footer__item">
+								<a href="#">Оплата</a>
+							</li>
+							<li class="footer__item">
+								<a href="#">Возврат-обмен</a>
+							</li>
+							<li class="footer__item">
+								<a href="#">Новости</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="footer__items">
+						<ul class="footer__social-list">
+							<li class="footer__social-item">
+								<a href="#">
+									<img src="images/instagram.svg" alt="">
+								</a>
+							</li>
+							<li class="footer__social-item">
+								<a href="#">
+									<img src="images/vk.svg" alt="">
+								</a>
+							</li>
+							<li class="footer__social-item">
+								<a href="#">
+									<img src="images/facebook.svg" alt="">
+								</a>
+							</li>
+							<li class="footer__social-item">
+								<a href="#">
+									<img src="images/youtube.svg" alt="">
+								</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			
+		</div>
+	</footer>
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
